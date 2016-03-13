@@ -1,0 +1,55 @@
+<head> 
+ <title>Test5_ParagraphsAndLists</title> 
+</head> 
+ <body> 
+<p> This is the trickiest step in translating from our markup notation
+to HTML.  It involves marking up <i>paragraphs</i>, which we distinguish
+with square brackets.  What makes it tricky is that we have three
+different kinds of paragraphs. </p>
+
+<ol> 
+<li> Plain paragraphs, which just consist of a single block of text. </li>
+
+<li> Unnumbered, or bulletted, lists, which contain one or more
+  separate list items, marked up with surrounding asterisks. </li>
+
+<li> Ordered, or numbered, lists, which contain one or more separate
+  list items, marked up with surrounding hash characters, as is the
+  case for these three items. </li>
+</ol>
+
+<p>
+The challenge is that since all three kinds of paragraphs are
+surrounded by square brackets, we have to appropriately choose to
+replace the brackets with HTML <b>p</b>, <b>ul</b> or <b>ol</b> tags.
+The following observations are helpful for doing this.
+</p>
+
+<ul>  <li> A plain paragraph in the markup notation is some text in
+     square brackets that does <b>not</b> contain asterisks or
+     hashes. </li>
+
+   <li> An unnumbered list is a paragraph whose first and last
+     non-whitespace character is an asterisk. </li>
+
+   <li> An ordered list is a paragraph whose first and last non-whitespace
+     characters are hashes. </li>  </ul>
+
+<p>   As usual, <i>think</i> before you code.  The order in which you do
+the regular expression substitutions is significant.  This
+problem can be solved quite easily if you do the substitutions in
+the right order.  You can assume that we do not include <i>nested</i>
+lists in our markup notation.  Allowing list nesting makes the
+problem <b>much</b> harder.   </p>
+
+<p>
+
+Also, once again, whitespace in the source should not have any impact
+on your solution.  In this file we have deliberately laid out the
+source of the two lists differently.  Of course, in a real document it
+would be much better to follow a consistent layout style.
+
+</p>
+
+
+ </body>

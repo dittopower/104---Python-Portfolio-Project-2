@@ -1,0 +1,14 @@
+This test introduces emphasis to our text.  There are, in fact, two
+distinct ways to emphasise a word or phrase in a markup language.  The
+most obvious is to hardwire the choice of font---this is the approach
+used here, following the lead of Wikipedia.  Options usually include
+'''boldface text''', in this case marked up with three single-quote
+marks, and ''italic text'', here surrounded by two single-quote marks.
+The alternative to hardwiring is to let the software choose which font
+to use for emphasis contextually.  For instance, if the current font
+is already ''italics'' then we cannot use ''italics'' for emphasis and
+would need to choose some contrasting font such as '''boldface''' or
+standard upright text.  The HTML '''em''' tag does this, choosing
+whatever font is appropriate to emphasise the text in the current
+context, so it is often better to use '''em''' rather than '''i''' or
+'''b''' tags in HTML documents.

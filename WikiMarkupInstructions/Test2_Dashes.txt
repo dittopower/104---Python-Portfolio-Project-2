@@ -1,0 +1,19 @@
+This test involves introducing some single-character markups.  To
+complete it you will need to first find out what the HTML code is for
+an en-dash and an em-dash.  In our simple markup notation we represent
+these characters via two and three hyphens, respectively.  In
+high-quality typesetting one should be careful to distinguish these
+two special symbols from hyphens and minus signs.  A hyphen is used to
+join two words to form a phrase as was done with the phrase
+high-quality in the previous sentence.  However an em-dash is used to
+connect two phrases to form a sentence---this particular sentence
+being an example.  Note that an em-dash is so-named because it is as
+wide as the letter m.  If your function is working correctly, the
+following em-dash symbol --- should be noticeably wider than a hyphen
+-.  An en-dash, as its name implies, is as wide as the letter n.
+En-dashes are used to denote ranges, like A--Z.  Again, if your
+function is doing its job, you should be able to see that the
+following en-dash -- is a tiny bit wider than this hyphen -.  Of
+course, if you are unsure, have a look at the source code for the HTML
+file you have generated to check that the correct HTML markup has been
+inserted.
